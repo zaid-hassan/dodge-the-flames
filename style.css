@@ -33,7 +33,7 @@ body {
     position: relative;
     top: 130px;
     left: 480px;
-    animation: frameofref 3s infinite;
+    animation: frameofref 2s infinite;
 }
 
 @keyframes frameofref {
