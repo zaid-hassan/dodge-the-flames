@@ -4,6 +4,7 @@
 }
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -33,7 +34,9 @@ body {
     position: relative;
     top: 130px;
     left: 480px;
-    animation: frameofref 2s infinite;
+}
+.start{
+    animation: frameofref 1.5s infinite;
 }
 
 @keyframes frameofref {

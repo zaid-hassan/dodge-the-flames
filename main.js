@@ -8,6 +8,11 @@ function jump(){
         character.classList.remove("animation");
     }, 500)
 }
+function start(){
+    if (block.classList != "start"){
+        block.classList.add("start");
+    }
+}
 
 let checkgame = setInterval(function(){
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
