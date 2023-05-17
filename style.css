@@ -3,11 +3,22 @@
     margin: 0;
 }
 body {
+    background-color: burlywood;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 40px;
+    padding: 16px;
 }
 #frame {
     width: 500px;
@@ -16,9 +27,9 @@ body {
 }
 
 #character {
-    width: 20px;
+    width: 40px;
     height: 50px;
-    background-color: red;
+    background-color: seagreen;
     position: relative;
     top: 150px;
     left: 120px;
@@ -30,16 +41,35 @@ body {
 #block {
     width: 20px;
     height: 20px;
-    background-color: blue;
+    background-color: rebeccapurple;
     position: relative;
     top: 130px;
     left: 480px;
 }
+#block2 {
+    width: 20px;
+    height: 20px;
+    background-color: royalblue;
+    position: relative;
+    top: 110px;
+    left: 480px;
+}
+/* .display {
+    display: none;
+} */
+
 .start{
-    animation: frameofref 1.5s infinite;
+    animation: frameofref 2s infinite alternate ease;
+}
+.start2{
+    animation: frameofref2 3.5s infinite alternate ease;
 }
 
 @keyframes frameofref {
+    0%{left: 480px;}
+    100%{left: 0px;}
+}
+@keyframes frameofref2 {
     0%{left: 480px;}
     100%{left: 0px;}
 }
