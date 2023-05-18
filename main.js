@@ -1,21 +1,28 @@
 let character = document.getElementById("character");
-let block = document.getElementById("block");
-let block2 = document.getElementById("block2");
-// let score = 0;
+let flame = document.getElementById("flame");
+let flame2 = document.getElementById("flame2");
+let score = document.getElementById("scoreboard");
+
+
+flame.style.display = "none";
+flame2.style.display = "none";
 
 let start = ()=> {
-    if (block.classList != "start"){
-        block.classList.add("start");
+    if (flame.classList != "start"){
+        flame.style.display = "block";
+        flame.classList.add("start");
     }
 }
 let start2 = ()=> {
-    if (block2.classList != "start2"){
-        block2.classList.add("start2");
+    if (flame2.classList != "start2"){
+        flame2.style.display = "block";
+        flame2.classList.add("start2");
     }
 }
 
 let jump = ()=> {
     if (character.classList != "animation"){
+        character.style.display = "block";
         character.classList.add("animation");
     }
     setTimeout(function(){
@@ -23,30 +30,16 @@ let jump = ()=> {
     }, 500)
 }
 
-// let block2Left = parseInt(window.getComputedStyle(block2).getPropertyValue("left"));
-// if (block2Left > 500){
-//     block2.classList.add("display");
-//     setTimeout(function(){
-//         block2.classList.remove("display");
-//     }, 500)
-// }
-// else if (block2Left < 500 && block2Left > 0) {
-//     block2.classList.remove("display");
 
-// }
-
-// let drawScore = ()=> {
-    
-// }
-
-let checkgame = setInterval(function(){
+let checkGame = setInterval(()=>{
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-    let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-    let block2Left = parseInt(window.getComputedStyle(block2).getPropertyValue("left"));
-    if (((blockLeft < 160 && blockLeft > 120) || (block2Left < 160 && block2Left > 120)) && characterTop >= 130){
-        block.style.animation = "none";
-        block2.style.animation = "none";
-        block.classList.remove("start");
+    let flameLeft = parseInt(window.getComputedStyle(flame).getPropertyValue("left"));
+    let flame2Left = parseInt(window.getComputedStyle(flame2).getPropertyValue("left"));
+    if (((flameLeft < 160 && flameLeft > 120) || (flame2Left < 160 && flame2Left > 120)) && characterTop >= 130){
+        flame.style.animation = "none";
+        flame2.style.animation = "none";
+        flame.classList.remove("start");
+        flame2.classList.remove("start");
         alert("You lose!");
     }
 },10)

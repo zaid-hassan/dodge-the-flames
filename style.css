@@ -3,7 +3,6 @@
     margin: 0;
 }
 body {
-    background-color: burlywood;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,34 +28,28 @@ header {
 #character {
     width: 40px;
     height: 50px;
-    background-color: seagreen;
     position: relative;
     top: 150px;
     left: 120px;
 }
 .animation {
-    animation: jump 500ms infinite;
+    animation: jump 500ms infinite ease;
 }
 
-#block {
+#flame {
     width: 20px;
     height: 20px;
-    background-color: rebeccapurple;
     position: relative;
     top: 130px;
     left: 480px;
 }
-#block2 {
+#flame2 {
     width: 20px;
     height: 20px;
-    background-color: royalblue;
     position: relative;
     top: 110px;
     left: 480px;
 }
-/* .display {
-    display: none;
-} */
 
 .start{
     animation: frameofref 2s infinite alternate ease;
