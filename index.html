@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" onclick="jump(), start(), start2()">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <p>Click to start the game.</p>
+        <p>Dodge-The-Flames</p>
         <div class="score">
             <p id="scoreboard">
                 Score: 0000
@@ -17,6 +23,7 @@
         </div>
     </header>
     <div id="frame">
+        <p id="gameover">Game Over</p>
         <div id="character">
             <img src="assets/character.png" alt="crab" srcset="">
         </div>
@@ -26,7 +33,9 @@
         <div id="flame2">
             <img src="assets/flames.png" alt="crab" srcset="">
         </div>
+        <button id="gamebutton">button</button>
     </div>
     <script src="main.js"></script>
 </body>
+
 </html>
