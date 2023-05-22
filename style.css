@@ -107,8 +107,8 @@ header {
 
 @keyframes jump {
     0%{top: 130px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
+    30%{top: 90px;}
+    70%{top: 90px;}
     100%{top: 130px;}
 }
 
