@@ -25,6 +25,7 @@ header {
 }
 #mobile {
     display: none;
+    line-height: 24px;
 }
 #frame {
     width: 500px;
