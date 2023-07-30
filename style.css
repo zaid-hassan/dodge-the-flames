@@ -75,10 +75,10 @@ header {
 }
 
 .start{
-    animation: frameofref 2s infinite alternate ease;
+    animation: frameofref 2.4s infinite alternate ease;
 }
 .start2{
-    animation: frameofref2 3.5s infinite alternate ease;
+    animation: frameofref2 3.9s infinite alternate ease;
 }
 
 #gamebutton {

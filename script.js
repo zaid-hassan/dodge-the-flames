@@ -41,7 +41,7 @@ let startGame = () => {
             flame2.style.display = "block";
         }
 
-        startAnimation();
+        setTimeout(startAnimation, 500);
 
         // Hide the button with display none and remove the eventlistner
         if (gameButton.style.display = "block") {
@@ -62,6 +62,7 @@ let startGame = () => {
 }
 
 let startAnimation = () => {
+
     if (flame.classList != "start") {
         flame.classList.add("start");
     }
@@ -110,7 +111,7 @@ let checkCollision = setInterval(() => {
 
 
         // TODO alert
-        alert("You lost!")
+        // alert("You lost!")
 
         // Reset Score
         if (score > 0) {
@@ -165,7 +166,7 @@ let restartGame = () => {
         gameButton.removeEventListener('click', reloadGameElements)
 
         // start animation again
-        startAnimation();
+        setTimeout(startAnimation, 500);
 
         // Score board
         // Start counting when character is visible in the screen
