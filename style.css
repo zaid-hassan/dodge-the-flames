@@ -14,14 +14,18 @@ body {
 
 header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 500px;
     height: 40px;
     padding: 16px;
     font-size: 12px;
     color: #2E3B51;
+}
+header > h1,
+header > div {
+    padding: .5rem;
 }
 #mobile {
     display: none;
